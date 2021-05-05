@@ -140,7 +140,7 @@ public class SearchClasses {
 
         } catch (Error | Exception e) {
             log("Search LuckMoney Classes Failed!");
-            throw e;
+//            throw e;
         }
 
         //ADBlock
@@ -153,7 +153,7 @@ public class SearchClasses {
             hp.XMLParserMethod = ReflectionUtil.findMethodsByExactParameters(XMLParserClass, Map.class, String.class, String.class)
                     .getName();
         } catch (Error | Exception e) {
-            log("Search LuckMoney Classes Failed!");
+            log("Search ADBlock Classes Failed!");
         }
 
 

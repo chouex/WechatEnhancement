@@ -80,7 +80,8 @@ public class Main implements IXposedHookLoadPackage {
             try {
                 plugin.hook(lpparam);
             } catch (Error | Exception e) {
-                log("loadPlugins error" + e);
+                log("loadPlugins error: " + plugin.getClass().getName() + " " + e);
+                e.printStackTrace();
             }
         }
     }
